@@ -6,7 +6,7 @@ from mainapp.models import Product
 
 def basket(request):
     # content = {}
-    # return render(request, "basketapp/basket.html", content)
+    # return render(request, "basketapp/basket.html", content)git 
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
 
 
@@ -18,6 +18,8 @@ def basket_add(request, pk):
         basket = Basket(user=request.user, product=product)
 
     basket.quantity += 1
+    basket.summaly += basket.product.price
+
     basket.save()
 
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
