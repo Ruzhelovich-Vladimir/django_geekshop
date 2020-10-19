@@ -18,7 +18,6 @@ def basket_add(request, pk):
         basket = Basket(user=request.user, product=product)
 
     basket.quantity += 1
-    basket.summaly += basket.product.price
 
     basket.save()
 
