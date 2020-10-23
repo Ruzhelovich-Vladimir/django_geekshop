@@ -1,0 +1,22 @@
+[
+{
+  "model": "authnapp.shopuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$CkOPeciAewkI$Y4GcZvAIrfH2Lo3JCxPre2GeLYakqIFGivpfaXKml0c=",
+    "last_login": "2020-10-22T08:16:41.503Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@localhost",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-10-22T07:47:52.680Z",
+    "avatar": "",
+    "age": 20,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
